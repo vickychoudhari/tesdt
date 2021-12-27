@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script type="text/javascript">
+  
+
+  $(document).ready(function(){
+  $(window).scroll(function(){
+    var positiontop = $(document).scrollTop();
+    console.log(positiontop); 
+    if ((positiontop > 55 && positiontop < 208)) {
+      $('#card-one').addClass('animated swing');
+    }
+    if ((positiontop > 391 && positiontop < 571)) {
+      $('#card-two').addClass('animated bounceInLeft');
+    }
+    if ((positiontop > 962 && positiontop < 1193)) {
+      $('#card-three').addClass('animated wobble');
+    }
+    if ((positiontop > 1491 && positiontop < 1504)) {
+      $('#card-four').addClass('animated flipInY');
+    }
+  });
+  });
+</script>
+  <title>test</title>
+</head>
+<body>
+ <div class="container">
+  <h2>Card Image</h2>
+  <!-- <p>Image at the top (card-img-top):</p> -->
+  <div class="card" style="width:400px" id="card-one">
+    <img class="card-img-top" src="/home/vishal/Desktop/crop report.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  
+  <!-- <p>Image at the bottom (card-img-bottom):</p> -->
+  <div class="card" style="width:400px" id="card-two">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="/home/vishal/Desktop/vis.jpg" alt="Card image" style="width:100%">
+  </div>
+  <!-- <p>Image at the bottom (card-img-bottom):</p> -->
+  <div class="card" style="width:400px" id="card-three">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="/home/vishal/Desktop/vis.jpg" alt="Card image" style="width:100%">
+  </div>
+  <!-- <p>Image at the bottom (card-img-bottom):</p> -->
+  <div class="card" style="width:400px" id="card-four">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="/home/vishal/Desktop/vis.jpg" alt="Card image" style="width:100%">
+  </div>
+</div>
+
+
+</body>
+</html>
